@@ -22,10 +22,14 @@ export default {
       inter: ['Inter ', 'sans-serif'],
       dmsans: ['DM Sans', 'sans-serif'],
       nunito: ['Nunito', 'sans-serif'],
+      nunitosans: ['Nunito Sans', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
         'bg-introducao': "url('src/assets/img/bg-introducao.png')",
+      },
+      content: {
+        discount: 'url("src/assets/img/discount.png")',
       },
     },
   },
