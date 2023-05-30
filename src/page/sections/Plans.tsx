@@ -36,7 +36,7 @@ const Plans = () => {
           textPrice="text-white"
           textPlan="text-white opacity-40"
           priceInfo=""
-          bgbutton="bg-secondary"
+          bgbutton="bg-gradient-to-r from-[#26E9CF] to-[#25CDE1]"
         />
         <CardPlans
           subtitle="6 meses de acesso"
