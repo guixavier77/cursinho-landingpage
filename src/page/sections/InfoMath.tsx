@@ -12,7 +12,7 @@ const infoMath = () => {
     <div className="pt-16">
       <div className="center flex ">
         <div className=" flex flex-col gap-4 ">
-          <div className="flex flex-row gap-3 pr-11">
+          <div className="flex flex-row gap-3 pr-11 ">
             <IconInfoMath iconUrl={tablerMath} />
             <ListInfoMath
               title="100% focado na Matemática"
@@ -43,9 +43,9 @@ const infoMath = () => {
 
           <a
             href=""
-            className="block font-dmsans text-white font-bold text-lg bg-primary py-5 px-12 rounded-md my-2 max-w-[313px]"
+            className="block font-dmsans text-white font-bold text-lg bg-primary py-5 px-12 rounded-md my-2 max-w-[313px] t:text-base t:px-8 t:max-w-[260px]"
           >
-            <span className="pr-7">Quero ser aprovado</span>
+            <span className="pr-5">Quero ser aprovado</span>
             <FontAwesomeIcon icon={faArrowRight} />
           </a>
         </div>

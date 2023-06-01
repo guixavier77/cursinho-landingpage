@@ -5,8 +5,8 @@ const Header = () => {
     <div className="center flex items-center justify-between py-5">
       <img src={logo} alt="" />
 
-      <nav className="flex items-center gap-16">
-        <ul className="flex gap-9">
+      <nav className="flex items-center gap-16 t:gap-8">
+        <ul className="flex gap-9 t:gap-3">
           <MenuOption title="Home" />
           <MenuOption title="Quem somos" />
           <MenuOption title="Planos" />
