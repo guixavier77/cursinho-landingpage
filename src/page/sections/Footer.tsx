@@ -1,6 +1,10 @@
 import logo from '../../assets/img/logo-footer.svg'
 import googlePlay from '../../assets/img/google-play.svg'
 import appleStore from '../../assets/img/apple.svg'
+import facebooksvg from '../../assets/img/facebook.svg'
+import twittersvg from '../../assets/img/twitter-fill.svg'
+import instagramsvg from '../../assets/img/instagram-fill.svg'
+
 type textProps = {
   text: string
 }
@@ -21,23 +25,29 @@ const Footer = () => {
         <div>
           <img src={logo} alt="" />
           <div className="flex pt-16 gap-5">
-            <div className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3">
+            <a
+              href=""
+              className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3"
+            >
               <img src={appleStore} alt="" className=" w-6 h-6" />
               <p className="text-[#4E4C7A] text-xs ">
                 Disponível na
                 <br />
                 <b className="font-extrabold">App Store</b>
               </p>
-            </div>
+            </a>
 
-            <div className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3">
+            <a
+              href=""
+              className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3"
+            >
               <img src={googlePlay} alt="" className=" w-6 h-6" />
               <p className="text-[#4E4C7A] text-xs ">
                 Disponível na
                 <br />
                 <b className="font-extrabold">Google Play</b>
               </p>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -61,8 +71,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div>
-        <p>© Copyright 2021. All Right Reserved</p>
+      <div className="pt-16 pb-8 flex justify-between">
+        <p className="text-gray200 font-worksans text-base ">
+          © Copyright 2021. All Right Reserved
+        </p>
+
+        <div className="flex gap-6">
+          <img src={facebooksvg} alt="" />
+          <img src={twittersvg} alt="" />
+          <img src={instagramsvg} alt="" />
+        </div>
       </div>
     </div>
   )
