@@ -13,7 +13,7 @@ const Testimonials = () => {
         quem é expert no assunto
       </h1>
 
-      <div className="flex gap-[30px] t:flex-wrap">
+      <div className="flex gap-[30px] t:flex-wrap s:flex-wrap">
         <CardTestimonial
           user="Guilherme"
           userFunction="Desenvolvedor web"

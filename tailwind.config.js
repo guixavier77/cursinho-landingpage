@@ -23,6 +23,7 @@ export default {
       dmsans: ['DM Sans', 'sans-serif'],
       nunito: ['Nunito', 'sans-serif'],
       nunitosans: ['Nunito Sans', 'sans-serif'],
+      fredoka: ['Fredoka', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
@@ -30,6 +31,22 @@ export default {
       },
       content: {
         discount: 'url("src/assets/img/discount.png")',
+      },
+
+      animation: {
+        'show-down':
+          'show-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   forwards',
+      },
+      keyframes: {
+        'show-down': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(0, -30px, 0)',
+          },
+          to: {
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
       },
     },
   },

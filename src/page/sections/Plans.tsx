@@ -22,7 +22,7 @@ const Plans = () => {
         <SubTitle text="Nosso planos" />
         <Title text="Invista no seu futuro" />
       </div>
-      <div className="flex gap-7 t:flex-wrap ">
+      <div className="flex gap-7 s:flex-wrap t:flex-wrap ">
         <CardPlans
           subtitle="1 ano de acesso"
           title="Plano Recomendado"

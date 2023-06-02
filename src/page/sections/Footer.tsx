@@ -1,54 +1,31 @@
 import logo from '../../assets/img/logo-footer.svg'
-import googlePlay from '../../assets/img/google-play.svg'
-import appleStore from '../../assets/img/apple.svg'
-import facebooksvg from '../../assets/img/facebook.svg'
-import twittersvg from '../../assets/img/twitter-fill.svg'
-import instagramsvg from '../../assets/img/instagram-fill.svg'
+import AppButton from '../components/AppButton'
+
+import Copyright from '../components/Copyright'
 
 type textProps = {
   text: string
 }
 const Title = ({ text }: textProps) => {
   return (
-    <h4 className="text-primary text-xl font-inter font-medium pb-3">{text}</h4>
+    <h4 className="text-primary text-xl font-inter font-medium pb-3 t:text-lg">
+      {text}
+    </h4>
   )
 }
 
 const Description = ({ text }: textProps) => {
-  return <p className="text-gray200 text-[17px] font-inter pb-2">{text}</p>
+  return (
+    <p className="text-gray200 text-[17px] font-inter pb-2 t:text-sm">{text}</p>
+  )
 }
 
 const Footer = () => {
   return (
     <div className="center mt-20">
-      <div className="flex  justify-between">
+      <div className="flex  justify-between ">
         <div>
           <img src={logo} alt="" />
-          <div className="flex pt-16 gap-5">
-            <a
-              href=""
-              className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3"
-            >
-              <img src={appleStore} alt="" className=" w-6 h-6" />
-              <p className="text-[#4E4C7A] text-xs ">
-                Disponível na
-                <br />
-                <b className="font-extrabold">App Store</b>
-              </p>
-            </a>
-
-            <a
-              href=""
-              className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3"
-            >
-              <img src={googlePlay} alt="" className=" w-6 h-6" />
-              <p className="text-[#4E4C7A] text-xs ">
-                Disponível na
-                <br />
-                <b className="font-extrabold">Google Play</b>
-              </p>
-            </a>
-          </div>
         </div>
 
         <div className="flex flex-col">
@@ -70,18 +47,11 @@ const Footer = () => {
           <Description text="Políticas de Privacidade" />
         </div>
       </div>
+      <AppButton />
 
-      <div className="pt-16 pb-8 flex justify-between">
-        <p className="text-gray200 font-worksans text-base ">
-          © Copyright 2021. All Right Reserved
-        </p>
+      {/* copyright */}
 
-        <div className="flex gap-6">
-          <img src={facebooksvg} alt="" />
-          <img src={twittersvg} alt="" />
-          <img src={instagramsvg} alt="" />
-        </div>
-      </div>
+      <Copyright />
     </div>
   )
 }
