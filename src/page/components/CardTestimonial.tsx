@@ -20,14 +20,14 @@ const CardTestimonial = ({
       </p>
 
       <div className="flex items-center pt-6 ">
-        <img src={userRating} alt="" />
+        <img src={userRating} draggable="false" alt="" />
         <div className="pl-4 font-inter">
           <p className=" max-w-[185px] text-xl font-medium text-primary">
             {user}
           </p>
           <p className="max-w-[185px] text-xs text-gray200">{userFunction}</p>
         </div>
-        <img className="ml-auto" src={doubleQuotes} alt="" />
+        <img className="ml-auto" draggable="false" src={doubleQuotes} alt="" />
       </div>
     </div>
   )

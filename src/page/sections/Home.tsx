@@ -32,7 +32,11 @@ const Home = () => {
           className="bg-bg-introducao bg-cover py-[80px] s:hidden"
           data-aos="fade-down"
         >
-          <img src={meninoEstudante} alt="" />
+          <img
+            className="relative animate-animated-image"
+            src={meninoEstudante}
+            alt=""
+          />
         </div>
       </div>
     </div>
