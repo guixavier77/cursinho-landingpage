@@ -10,7 +10,7 @@ import fuvestLogo from '../../assets/img/universities/fuvest.png'
 const Universities = () => {
   return (
     <div className="center">
-      <ul className="flex items-center justify-center gap-12 mt-4">
+      <ul className="mt-4 flex items-center justify-center gap-12">
         <University logo={enemLogo} />
         <University logo={pucLogo} />
         <University logo={fgvLogo} />

@@ -8,7 +8,7 @@ const Testimonials = () => {
       <div className="s:pb-3">
         <SubTitle text="depoimentos" />
 
-        <h1 className="font-nunito text-primary text-5xl font-bold py-4 t:text-4xl pb-16 s:text-lg s:py-0">
+        <h1 className="py-4 pb-16 font-nunito text-5xl font-bold text-primary t:text-4xl s:py-0 s:text-lg">
           Recomendados por
           <br />
           quem é expert no assunto

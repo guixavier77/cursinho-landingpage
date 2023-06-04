@@ -33,24 +33,24 @@ const CardPlans = ({
 }: CardProps) => {
   return (
     <div
-      className={`font-nunito ${bg}  rounded-[18px] pt-[62px] pr-[13.5px] pl-9 pb-[37.2px] max-w-[570px] `}
+      className={`font-nunito ${bg}  max-w-[570px] rounded-[18px] pb-[37.2px] pl-9 pr-[13.5px] pt-[62px] `}
     >
       <div
-        className={`pt-15 font-bold pb-11 relative after:content-discount after:absolute after:right-0 after:-top-10 s:after:content-discountMobile s:after:-top-3 ${display}`}
+        className={`pt-15 relative pb-11 font-bold after:absolute after:-top-10 after:right-0 after:content-discount s:after:-top-3 s:after:content-discountMobile ${display}`}
       >
-        <p className={`text-[#3c5882] text-[22px] pb-2 s:text-xs`}>
+        <p className={`pb-2 text-[22px] text-[#3c5882] s:text-xs`}>
           {subtitle}
         </p>
         <h4 className={`${titleColor}  text-3xl s:text-base`}>{title}</h4>
       </div>
 
       <div>
-        <p className="text-2xl text-blue font-bold s:text-sm">vantagens</p>
-        <ul className="pt-8 pl-8 s:pt-4 pr-11 s:pl-4">
+        <p className="text-2xl font-bold text-blue s:text-sm">vantagens</p>
+        <ul className="pl-8 pr-11 pt-8 s:pl-4 s:pt-4">
           {advantage.map((item) => {
             return (
               <li
-                className={`text-base pb-4 s:pb-2 flex gap-4 items-start s:text-[9px] s:items-center ${advtextColor}`}
+                className={`flex items-start gap-4 pb-4 text-base s:items-center s:pb-2 s:text-[9px] ${advtextColor}`}
                 key={item}
               >
                 <FontAwesomeIcon icon={faCheck} />{' '}
@@ -64,26 +64,26 @@ const CardPlans = ({
       <div className="flex items-center justify-between ">
         <div>
           <p
-            className={`${priceInfo} opacity-40 text-white text-base pl-9 font-nunitosans s:text-[8px]`}
+            className={`${priceInfo} pl-9 font-nunitosans text-base text-white opacity-40 s:text-[8px]`}
           >
             de R$178,80
           </p>
           <div className="flex items-end">
-            <p className="self-start text-secondary font-nunitosans font-semibold text-xl pr-3 s:text-xs">
+            <p className="self-start pr-3 font-nunitosans text-xl font-semibold text-secondary s:text-xs">
               R$
             </p>
             <p
-              className={`${textPrice} font-nunitosans font-extrabold text-4xl s:text-xl`}
+              className={`${textPrice} font-nunitosans text-4xl font-extrabold s:text-xl`}
             >
               {price}
             </p>
             <span
-              className={`font-bold text-base font-nunito s:text-[8px]  ${textPlan}  `}
+              className={`font-nunito text-base font-bold s:text-[8px]  ${textPlan}  `}
             >
               {plan}
             </span>
           </div>
-          <p className={`${priceInfo} opacity-40 text-white pt-3 s:text-[8px]`}>
+          <p className={`${priceInfo} pt-3 text-white opacity-40 s:text-[8px]`}>
             Menos de 5 reais por mês :)
           </p>
         </div>
@@ -91,7 +91,7 @@ const CardPlans = ({
         <div className="pr-11 ">
           <a
             href=""
-            className={`py-5 px-16 font-dmsans text-white rounded-xl font-bold text-base s:px-8 s:py-3 ${bgbutton}`}
+            className={`rounded-xl px-16 py-5 font-dmsans text-base font-bold text-white s:px-8 s:py-3 ${bgbutton}`}
           >
             Eu quero!
           </a>

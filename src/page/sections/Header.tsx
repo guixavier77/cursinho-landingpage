@@ -19,7 +19,7 @@ const Header = () => {
 
       <nav className="flex items-center gap-16 t:gap-8 ">
         <div
-          className="cursor-pointer p-3 hidden  s:block"
+          className="hidden cursor-pointer p-3  s:block"
           onClick={ToggleMode}
         >
           <div className={`hamburguer ${active ? 'hamburguer-1' : ''}`}></div>
@@ -27,7 +27,7 @@ const Header = () => {
           <div className={`hamburguer ${active ? 'hamburguer-3' : ''}`}></div>
         </div>
         <ul
-          className={`flex gap-9 t:gap-3 s:menuMobile s:gap-0 s:${
+          className={`s:menuMobile flex gap-9 t:gap-3 s:gap-0 s:${
             active ? 'block animate-show-down ' : 'hidden'
           }`}
         >
@@ -39,7 +39,7 @@ const Header = () => {
 
         <a
           href="#"
-          className="bg-primary py-3 px-11 text-white rounded-md font-dmsans font-bold text-base s:hidden"
+          className="rounded-md bg-primary px-11 py-3 font-dmsans text-base font-bold text-white s:hidden"
         >
           Entrar
         </a>

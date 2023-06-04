@@ -3,13 +3,13 @@ import appleStore from '../../assets/img/apple.svg'
 
 const AppButton = () => {
   return (
-    <div className="flex  gap-5 flex-wrap">
+    <div className="flex  flex-wrap gap-5 s:flex-col">
       <a
         href=""
-        className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3"
+        className="flex max-w-[160px] items-center justify-center gap-3 rounded-lg border-[1px] border-[#D5D5DF] px-4 py-2 font-inter"
       >
-        <img src={appleStore} alt="" className=" w-6 h-6" />
-        <p className="text-[#4E4C7A] text-xs ">
+        <img src={appleStore} alt="" className=" h-6 w-6" />
+        <p className="text-xs text-[#4E4C7A] ">
           Disponível na
           <br />
           <b className="font-extrabold">App Store</b>
@@ -18,10 +18,10 @@ const AppButton = () => {
 
       <a
         href=""
-        className="font-inter border-[1px] border-[#D5D5DF] py-2 px-4 rounded-lg flex items-center max-w-[160px] justify-center gap-3"
+        className="flex max-w-[160px] items-center justify-center gap-3 rounded-lg border-[1px] border-[#D5D5DF] px-4 py-2 font-inter"
       >
-        <img src={googlePlay} alt="" className=" w-6 h-6" />
-        <p className="text-[#4E4C7A] text-xs ">
+        <img src={googlePlay} alt="" className=" h-6 w-6" />
+        <p className="text-xs text-[#4E4C7A] ">
           Disponível na
           <br />
           <b className="font-extrabold">Google Play</b>

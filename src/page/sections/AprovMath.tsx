@@ -4,7 +4,7 @@ import { Description, SubTitle, Title } from '../components/Global'
 const AprovMath = () => {
   return (
     <div className="bg-gray100">
-      <div className="center s:pt-10 pt-20 flex s:flex-wrap pb-5 ">
+      <div className="center flex pb-5 pt-20 s:flex-wrap s:pt-10 ">
         <div className="s:flex s:flex-col-reverse">
           <img src={meninoFoguetinho} className="" alt="" />
           <div className="s:text-center">

@@ -2,13 +2,14 @@ import logo from '../../assets/img/logo-footer.svg'
 import AppButton from '../components/AppButton'
 
 import Copyright from '../components/Copyright'
+import ScrollToTop from '../components/ScrollToTop'
 
 type textProps = {
   text: string
 }
 const Title = ({ text }: textProps) => {
   return (
-    <h4 className="text-primary text-xl font-inter font-medium pb-3 t:text-lg">
+    <h4 className="pb-3 font-inter text-xl font-medium text-primary t:text-lg">
       {text}
     </h4>
   )
@@ -16,31 +17,31 @@ const Title = ({ text }: textProps) => {
 
 const Description = ({ text }: textProps) => {
   return (
-    <p className="text-gray200 text-[17px] font-inter pb-2 t:text-sm">{text}</p>
+    <p className="pb-2 font-inter text-[17px] text-gray200 t:text-sm">{text}</p>
   )
 }
 
 const Footer = () => {
   return (
-    <div className="center mt-20 ">
-      <div className="flex  justify-between ">
-        <div>
+    <div className="center mt-20 s:flex s:flex-col s:items-center s:pb-6">
+      <div className="flex  justify-between s:flex-col s:justify-center">
+        <div className="pb-12">
           <img src={logo} alt="" />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col s:pb-6 s:text-center">
           <Title text="Localização" />
           <Description text="Av. Brg. Faria Lima , 1422" />
           <Description text="São Paulo - SP" />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col s:pb-6 s:text-center">
           <Title text="Fale Conosco" />
           <Description text="(22) 4442-0126" />
           <Description text="info@digihouse.com" />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col s:pb-14 s:text-center">
           <Title text="Políticas" />
           <Description text="Direitos autorais" />
           <Description text="Termos de uso" />
@@ -52,6 +53,8 @@ const Footer = () => {
       {/* copyright */}
 
       <Copyright />
+
+      <ScrollToTop />
     </div>
   )
 }

@@ -12,7 +12,9 @@ import ScrollToTop from './page/components/ScrollToTop'
 const App = () => {
   return (
     <div>
-      <ScrollToTop />
+      <div className="s:hidden">
+        <ScrollToTop />
+      </div>
       <Header />
       <Home />
       <Universities />

@@ -13,16 +13,16 @@ const CardTestimonial = ({
   userTestimonial,
 }: CardProps) => {
   return (
-    <div className="drop-shadow-xl p-6 bg-white max-w-[370px]">
+    <div className="max-w-[370px] bg-white p-6 drop-shadow-xl">
       <img className="pb-3" src={star} alt="" />
-      <p className="font-inter text-gray200 text-base font-normal leading-6 max-w-[320px] ">
+      <p className="max-w-[320px] font-inter text-base font-normal leading-6 text-gray200 ">
         {userTestimonial}
       </p>
 
-      <div className="pt-6 flex items-center ">
+      <div className="flex items-center pt-6 ">
         <img src={userRating} alt="" />
-        <div className="font-inter pl-4">
-          <p className=" font-medium text-xl text-primary max-w-[185px]">
+        <div className="pl-4 font-inter">
+          <p className=" max-w-[185px] text-xl font-medium text-primary">
             {user}
           </p>
           <p className="max-w-[185px] text-xs text-gray200">{userFunction}</p>
