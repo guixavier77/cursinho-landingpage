@@ -5,7 +5,7 @@ const AprovMath = () => {
   return (
     <div className="bg-gray100">
       <div className="center flex pb-5 pt-20 s:flex-wrap s:pt-10 ">
-        <div className="s:flex s:flex-col-reverse">
+        <div className="s:flex s:flex-col-reverse " data-aos="fade-down">
           <img src={meninoFoguetinho} className="" alt="" />
           <div className="s:text-center">
             <SubTitle text="100% matemática" />
@@ -14,7 +14,10 @@ const AprovMath = () => {
           </div>
         </div>
 
-        <div className="s:flex s:flex-col s:justify-center">
+        <div
+          className="s:flex s:flex-col s:justify-center"
+          data-aos="fade-down"
+        >
           <div className="s:text-center ">
             <SubTitle text="Quer ser aprovado?" />
             <Title text="Se seu foco é ser aprovado, nós estamos aqui por você." />

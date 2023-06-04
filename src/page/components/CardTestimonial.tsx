@@ -13,7 +13,7 @@ const CardTestimonial = ({
   userTestimonial,
 }: CardProps) => {
   return (
-    <div className="max-w-[370px] bg-white p-6 drop-shadow-xl">
+    <div className="max-w-[370px] cursor-pointer select-none bg-white p-6 drop-shadow-xl">
       <img className="pb-3" src={star} alt="" />
       <p className="max-w-[320px] font-inter text-base font-normal leading-6 text-gray200 ">
         {userTestimonial}

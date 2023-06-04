@@ -11,7 +11,7 @@ const infoMath = () => {
   return (
     <div className="pt-16 s:mb-5">
       <div className="center flex s:justify-center">
-        <div className=" flex flex-col gap-4 s:gap-7 ">
+        <div className=" flex flex-col gap-4 s:gap-7 " data-aos="fade-down">
           <div className="flex flex-row gap-3 pr-11 s:flex-col s:pr-0 s:text-center ">
             <IconInfoMath iconUrl={tablerMath} />
             <ListInfoMath
@@ -50,7 +50,7 @@ const infoMath = () => {
           </a>
         </div>
 
-        <div className="s:hidden">
+        <div className="s:hidden" data-aos="fade-down">
           {/* aqui tem slide */}
           <img src={universitariaImg} alt="" />
           <img src={doisUniversitarios} alt="" className="hidden" />

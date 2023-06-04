@@ -6,10 +6,13 @@ const Home = () => {
   return (
     <div className="bg-primary font-inter s:pb-20" id="Home">
       <div className="center mb-11 grid grid-cols-2 s:grid-cols-1 ">
-        <div className="flex flex-col pt-[100px] s:items-center s:justify-center  ">
+        <div
+          className="flex flex-col pt-[100px] t:pt-20 s:items-center s:justify-center "
+          data-aos="fade-down"
+        >
           <div className="flex flex-row items-center  pb-8 t:pb-2 s:flex-col ">
             <img src={robozinho} alt="" className="" />
-            <p className="py-3 pl-5 text-xl font-bold text-secondary s:text-sm  ">
+            <p className="py-3 pl-5 text-xl font-bold text-secondary t:text-sm  s:text-sm">
               Seja aprovado no Enem e vestibulares :){' '}
             </p>
           </div>
@@ -25,7 +28,10 @@ const Home = () => {
           <ButtonSecondary />
         </div>
 
-        <div className="bg-bg-introducao bg-cover py-[80px] s:hidden">
+        <div
+          className="bg-bg-introducao bg-cover py-[80px] s:hidden"
+          data-aos="fade-down"
+        >
           <img src={meninoEstudante} alt="" />
         </div>
       </div>

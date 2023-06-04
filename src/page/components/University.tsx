@@ -3,11 +3,14 @@ type UniversityProps = {
 }
 const University = ({ logo }: UniversityProps) => {
   return (
-    <li>
-      <a href="">
-        <img className="grayscale " src={logo} alt="" />
-      </a>
-    </li>
+    <div className="flex  items-center justify-center">
+      <img
+        draggable="false"
+        className="cursor-default select-none grayscale "
+        src={logo}
+        alt=""
+      />
+    </div>
   )
 }
 

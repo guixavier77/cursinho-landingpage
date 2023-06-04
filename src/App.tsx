@@ -1,3 +1,6 @@
+import React from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import Header from './page/sections/Header'
 import Home from './page/sections/Home'
 import Universities from './page/sections/Universities'
@@ -10,6 +13,12 @@ import Footer from './page/sections/Footer'
 import ScrollToTop from './page/components/ScrollToTop'
 
 const App = () => {
+  React.useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      delay: 300,
+    })
+  }, [])
   return (
     <div>
       <div className="s:hidden">

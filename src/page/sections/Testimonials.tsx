@@ -1,6 +1,6 @@
-import CardTestimonial from '../components/CardTestimonial'
 import { SubTitle } from '../components/Global'
-import user from '../../assets/img/avaliador1.png'
+
+import CardCarousel from '../components/CardCarousel'
 
 const Testimonials = () => {
   return (
@@ -15,28 +15,11 @@ const Testimonials = () => {
         </h1>
       </div>
 
-      <div className="flex gap-[30px] t:flex-wrap s:flex-wrap">
-        <CardTestimonial
-          user="Guilherme"
-          userFunction="Desenvolvedor web"
-          userTestimonial="Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus."
-          userRating={user}
-        />
-
-        <CardTestimonial
-          user="Guilherme"
-          userFunction="Desenvolvedor web"
-          userTestimonial="Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus."
-          userRating={user}
-        />
-
-        <CardTestimonial
-          user="Guilherme"
-          userFunction="Desenvolvedor web"
-          userTestimonial="Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus."
-          userRating={user}
-        />
-      </div>
+      <CardCarousel />
+      <div
+        className="flex gap-[30px] t:flex-wrap s:flex-wrap"
+        data-aos="fade-down"
+      ></div>
     </div>
   )
 }
