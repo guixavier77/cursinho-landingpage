@@ -4,7 +4,7 @@ import instagramsvg from '../../assets/img/instagram-fill.svg'
 
 const Copyright = () => {
   return (
-    <div className="pt-16 pb-8 flex justify-between">
+    <div className="mt-8 pt-8 pb-8 flex justify-between border-t">
       <p className="text-gray200 font-worksans text-base ">
         © Copyright 2021. All Right Reserved
       </p>

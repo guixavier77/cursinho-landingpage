@@ -4,14 +4,16 @@ import user from '../../assets/img/avaliador1.png'
 
 const Testimonials = () => {
   return (
-    <div className="center py-16">
-      <SubTitle text="depoimentos" />
+    <div className="center py-16 s:text-center">
+      <div className="s:pb-3">
+        <SubTitle text="depoimentos" />
 
-      <h1 className="font-nunito text-primary text-5xl font-bold py-4 t:text-4xl pb-16">
-        Recomendados por
-        <br />
-        quem é expert no assunto
-      </h1>
+        <h1 className="font-nunito text-primary text-5xl font-bold py-4 t:text-4xl pb-16 s:text-lg s:py-0">
+          Recomendados por
+          <br />
+          quem é expert no assunto
+        </h1>
+      </div>
 
       <div className="flex gap-[30px] t:flex-wrap s:flex-wrap">
         <CardTestimonial

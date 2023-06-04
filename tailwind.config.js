@@ -31,6 +31,7 @@ export default {
       },
       content: {
         discount: 'url("src/assets/img/discount.png")',
+        discountMobile: 'url("src/assets/img/discountmobile.png")',
       },
 
       animation: {

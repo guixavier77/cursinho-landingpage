@@ -17,8 +17,8 @@ const Plans = () => {
     'Reforço para FUVEST, Unicamp e Vestibulares de Medicina',
   ]
   return (
-    <div className="center pt-16 t:pt-7 ">
-      <div className="pb-14 t:pb-7">
+    <div className="center pt-16 s:pt-10 t:pt-7 ">
+      <div className="pb-14 s:pb-8 t:pb-7 s:text-center">
         <SubTitle text="Nosso planos" />
         <Title text="Invista no seu futuro" />
       </div>

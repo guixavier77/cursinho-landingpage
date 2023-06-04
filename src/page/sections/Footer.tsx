@@ -22,7 +22,7 @@ const Description = ({ text }: textProps) => {
 
 const Footer = () => {
   return (
-    <div className="center mt-20">
+    <div className="center mt-20 ">
       <div className="flex  justify-between ">
         <div>
           <img src={logo} alt="" />

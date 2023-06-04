@@ -6,7 +6,7 @@ type MenuOptionProps = {
 
 const MenuOption = ({ title }: MenuOptionProps) => {
   return (
-    <li className="cursor-pointer  ">
+    <li className="cursor-pointer "> 
       <Link
         to={title}
         spy={true}

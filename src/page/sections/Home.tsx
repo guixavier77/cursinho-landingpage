@@ -4,7 +4,7 @@ import ButtonSecondary from '../components/ButtonSecondary'
 
 const Home = () => {
   return (
-    <div className="bg-primary font-inter pb-20" id="Home">
+    <div className="bg-primary font-inter s:pb-20" id="Home">
       <div className="center grid grid-cols-2 s:grid-cols-1 mb-11 ">
         <div className="pt-[100px] flex flex-col s:justify-center s:items-center  ">
           <div className="flex flex-row items-center  pb-8 t:pb-2 s:flex-col ">
