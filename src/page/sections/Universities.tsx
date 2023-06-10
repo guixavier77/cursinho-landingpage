@@ -32,6 +32,10 @@ const Universities = () => {
         responsive={responsive}
         itemClass="flex justify-center items-center  "
         infinite={true}
+        autoPlay
+        autoPlaySpeed={1000}
+        slidesToSlide={1}
+        arrows={false}
       >
         <University logo={enemLogo} />
         <University logo={pucLogo} />
